@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -106,3 +107,11 @@ img {
       line-height: 1.2; }
   .header-home__lead {
     margin-bottom: 1rem; }
+
+/* Estilos del la sección Specialize */
+.specialize {
+  text-align: center; }
+  .specialize .container {
+    padding: 2rem 0; }
+  .specialize__lead {
+    margin-bottom: 2rem; }
