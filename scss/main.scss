@@ -73,6 +73,7 @@ img {
 
 /* Estilos del Header */
 .header-home {
+  position: relative;
   height: 100vh;
   background-image: $bg-img;
   background-size: cover;
@@ -89,10 +90,19 @@ img {
   }
 
   &__content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    text-align: center;
 
+    h1 {
+      font-size: 4rem;
+      line-height: 1.2;
+    }
   }
 
   &__lead {
-
+    margin-bottom: 1rem;
   }
 }

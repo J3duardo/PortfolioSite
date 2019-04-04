@@ -4,6 +4,37 @@
   margin: auto;
   overflow: hidden; }
 
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  transition: all 350ms;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: #ffbc00; }
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333; }
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #ffbc00; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
 /* Estilos generales */
 body {
   font-family: 'Dosis', sans-serif;
@@ -57,9 +88,21 @@ img {
 
 /* Estilos del Header */
 .header-home {
+  position: relative;
   height: 100vh;
   background-image: url("../img/showcase.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
   color: #fff; }
+  .header-home__content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    text-align: center; }
+    .header-home__content h1 {
+      font-size: 4rem;
+      line-height: 1.2; }
+  .header-home__lead {
+    margin-bottom: 1rem; }
