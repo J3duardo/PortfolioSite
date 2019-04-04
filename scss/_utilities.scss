@@ -13,6 +13,17 @@
   cursor: pointer;
 }
 
+%bottom-border {
+  position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 5%;
+    height: 2px;
+    background-color: $main-color;
+}
+
 .btn {
   &-main {
     @extend %btn-shared;
