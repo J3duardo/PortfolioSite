@@ -1,0 +1,14 @@
+{
+  "name": "portafolio-website",
+  "version": "1.0.0",
+  "description": "Portafolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "Jesús Guzmán",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
