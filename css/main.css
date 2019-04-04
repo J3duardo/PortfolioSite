@@ -23,6 +23,12 @@ img {
   display: block;
   width: 100%; }
 
+.logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase; }
+
 /* Estilos del Header */
 .header-home {
   height: 100vh;

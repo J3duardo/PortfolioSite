@@ -31,6 +31,13 @@ img {
   width: 100%;
 }
 
+.logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 
 /* Estilos del Header */
 .header-home {
@@ -40,13 +47,13 @@ img {
   background-repeat: no-repeat;
   background-position: center right;
   color: #fff;
-  
+
   &__nav {
 
   }
 
   &__logo {
-
+    
   }
 
   &__content {
