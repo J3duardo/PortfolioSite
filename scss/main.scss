@@ -75,7 +75,7 @@ img {
 .header-home {
   position: relative;
   height: 100vh;
-  background-image: $bg-img;
+  background-image: linear-gradient(to right, #00000070, #00000070), $bg-img;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
