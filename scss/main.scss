@@ -116,7 +116,38 @@ img {
     padding: 2rem 0;
   }
 
+  &__title {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+
+    &::after {
+      @extend %bottom-border;
+    }
+  }
+
   &__lead {
     margin-bottom: 2rem;
+    font-size: 1.3rem;
+  }
+
+  &__specials {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__specials div {
+    padding: 0 0.5rem;
+  }
+
+  &__specials .fas {
+    color: $main-color;
+  }
+
+  &__specials h3 {
+    margin-bottom: 0.5rem;
   }
 }
