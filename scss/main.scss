@@ -30,3 +30,30 @@ img {
   display: block;
   width: 100%;
 }
+
+
+/* Estilos del Header */
+.header-home {
+  height: 100vh;
+  background-image: $bg-img;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  color: #fff;
+  
+  &__nav {
+
+  }
+
+  &__logo {
+
+  }
+
+  &__content {
+
+  }
+
+  &__lead {
+
+  }
+}
