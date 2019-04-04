@@ -35,6 +35,26 @@ img {
   color: #fff;
   text-transform: uppercase; }
 
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .main-nav ul {
+    display: flex; }
+  .main-nav li {
+    padding: 1rem 1.5rem; }
+  .main-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 350ms; }
+    .main-nav a:hover {
+      border-color: #ccc; }
+    .main-nav a.current {
+      border-color: #ffbc00; }
+
 /* Estilos del Header */
 .header-home {
   height: 100vh;
