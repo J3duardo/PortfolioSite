@@ -193,7 +193,14 @@ img {
     border-radius: 50%;
     text-align: center;
     color: #fff;
-    background-color: #333; }
+    background-color: #333;
+    transform-origin: top center;
+    transform: scale(1);
+    transition: all 350ms ease-in-out; }
+    .process__items-icon:hover, .process__items-icon:hover .process__items-icon__items-step {
+      transform: scale(1.1);
+      background-color: #ffbc00;
+      transition: all 500ms ease-in-out; }
   .process__items-step {
     position: absolute;
     top: 0;
@@ -205,4 +212,8 @@ img {
     text-align: center;
     color: #fff;
     background-color: #ffbc00;
-    border-radius: 50%; }
+    border-radius: 50%;
+    transition: background-color 500ms ease-in-out; }
+  .process__items-icon:hover .process__items-step {
+    background-color: #333;
+    transition: background-color 500ms ease-in-out; }
