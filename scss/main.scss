@@ -196,13 +196,21 @@ img {
 .process {
   text-align: center;
   padding-bottom: 3rem;
-  
+
   & .container {
 
   }
 
   & .container > h2{
-    
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+
+    &::after {
+      @extend %bottom-border;
+    }
   }
 
   & .container > p{

@@ -12,7 +12,7 @@
   border: none;
   cursor: pointer; }
 
-.specialize__title::after {
+.specialize__title::after, .process .container > h2::after {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -170,3 +170,9 @@ img {
 .process {
   text-align: center;
   padding-bottom: 3rem; }
+  .process .container > h2 {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 300; }
