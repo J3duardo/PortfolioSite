@@ -217,3 +217,29 @@ img {
   .process__items-icon:hover .process__items-step {
     background-color: #333;
     transition: background-color 500ms ease-in-out; }
+
+/* Estilos de footer */
+.footer {
+  background-color: #333;
+  padding: 1rem 0;
+  color: #fff; }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__icons {
+    display: flex; }
+    .footer__icons-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.6rem;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      transition: all 500ms ease-in-out; }
+      .footer__icons-icon:not(:last-child) {
+        margin-right: 1rem; }
+      .footer__icons-icon:hover {
+        color: #333;
+        background-color: #ffbc00;
+        transition: all 500ms ease-in-out; }

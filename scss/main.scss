@@ -267,12 +267,42 @@ img {
     background-color: $dark-color;
     transition: background-color 500ms ease-in-out;
   }
+}
 
-  & div > h3 {
-    
+
+/* Estilos de footer */
+.footer {
+  background-color: $dark-color;
+  padding: 1rem 0;
+  color: #fff;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  & div > p {
+  &__icons {
+    display: flex;
 
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.6rem;
+      border-radius: 50%;
+      border: 2px solid #fff;      
+      transition: all 500ms ease-in-out;
+      
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+      
+      &:hover {
+        color: $dark-color;
+        background-color: $main-color;
+        transition: all 500ms ease-in-out;
+      }
+    }
   }
 }
