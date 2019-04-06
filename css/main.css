@@ -165,3 +165,8 @@ img {
     background-color: #f4f4f4; }
   .stats__item:nth-child(even) {
     background-color: #ccc; }
+
+/* Estilos de la sección creative process */
+.process {
+  text-align: center;
+  padding-bottom: 3rem; }
