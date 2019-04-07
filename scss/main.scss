@@ -81,14 +81,6 @@ img {
   background-position: center right;
   color: #fff;
 
-  &__nav {
-
-  }
-
-  &__logo {
-    
-  }
-
   &__content {
     position: absolute;
     top: 45%;
@@ -105,6 +97,15 @@ img {
   &__lead {
     margin-bottom: 1rem;
   }
+}
+
+.header-about {
+  height: 5.5rem;
+  background-image: linear-gradient(to right, #00000070, #00000070), $bg-img;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-bottom: 3px solid $main-color;
 }
 
 
