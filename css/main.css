@@ -12,7 +12,7 @@
   border: none;
   cursor: pointer; }
 
-.specialize__title::after, .process .container > h2::after {
+.specialize__title::after, .process .container > h2::after, .about-me__title::after {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -251,3 +251,30 @@ img {
         color: #333;
         background-color: #ffbc00;
         transition: all 500ms ease-in-out; }
+
+/* Estilos de la página about me */
+.about-me {
+  text-align: center; }
+  .about-me .container {
+    padding: 2rem 0; }
+  .about-me__title {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 300; }
+  .about-me__info {
+    display: flex; }
+    .about-me__info-img {
+      display: block;
+      width: 35%;
+      margin-right: 1rem; }
+    .about-me__info-content {
+      width: 60%;
+      padding: 1rem;
+      border-left: 3px solid #ffbc00;
+      background-color: #f4f4f4; }
+      .about-me__info-content p:first-child {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: bold; }
