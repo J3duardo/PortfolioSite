@@ -119,7 +119,6 @@ img {
     margin-bottom: 1rem; }
 
 .header-about {
-  height: 5.5rem;
   background-image: linear-gradient(to right, #00000070, #00000070), url("../img/showcase.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -264,7 +263,8 @@ img {
     font-size: 2rem;
     font-weight: 300; }
   .about-me__info {
-    display: flex; }
+    display: flex;
+    margin-bottom: 2rem; }
     .about-me__info-img {
       display: block;
       width: 35%;
@@ -278,3 +278,8 @@ img {
         text-transform: uppercase;
         font-size: 1.2rem;
         font-weight: bold; }
+  .about-me__awards-container {
+    display: flex; }
+    .about-me__awards-container .fa-award {
+      margin-bottom: 1rem;
+      color: #ffbc00; }

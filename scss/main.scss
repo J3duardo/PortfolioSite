@@ -100,7 +100,6 @@ img {
 }
 
 .header-about {
-  height: 5.5rem;
   background-image: linear-gradient(to right, #00000070, #00000070), $bg-img;
   background-size: cover;
   background-repeat: no-repeat;
@@ -331,6 +330,7 @@ img {
 
   &__info {
     display: flex;
+    margin-bottom: 2rem;
 
     &-img {
       display: block;
@@ -352,5 +352,12 @@ img {
     }
   }
 
+  &__awards-container {
+    display: flex;
 
+    .fa-award {
+      margin-bottom: 1rem;
+      color: $main-color;
+    }
+  }
 }
