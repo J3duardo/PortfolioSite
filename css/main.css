@@ -251,7 +251,7 @@ img {
 .about-me {
   text-align: center; }
   .about-me .container {
-    padding: 2rem 0; }
+    padding: 3rem 0; }
   .about-me__title {
     position: relative;
     padding-bottom: 1rem;
@@ -280,7 +280,7 @@ img {
 
 /* Estilos de la sección progress bars */
 .progress-bars {
-  padding: 2rem 0;
+  padding: 3rem 0;
   color: #fff;
   background-color: #333; }
   .progress-bars__title {
@@ -323,7 +323,7 @@ img {
 
 /* Estilos de la sección testimonials */
 .testimonials {
-  padding: 2rem 0; }
+  padding: 3rem 0; }
   .testimonials__title {
     position: relative;
     padding-bottom: 1rem;
