@@ -344,10 +344,8 @@ img {
       border-left: 3px solid $main-color;
       background-color: $light-color;
 
-      & p:first-child {
+      h4 {
         text-transform: uppercase;
-        font-size: 1.2rem;
-        font-weight: bold;
       }
     }
   }
@@ -359,5 +357,58 @@ img {
       margin-bottom: 1rem;
       color: $main-color;
     }
+  }
+}
+
+
+/* Estilos de la sección progress bars */
+.progress-bars {
+  padding: 2rem 0;
+  color: #fff;
+  background-color: $dark-color;
+
+  &__title {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+
+    &::after {
+      @extend %bottom-border;
+    }
+  }
+
+  h4 {
+
+  }
+
+  &__bar-container {
+    border-radius: 5px;
+    background-color: $medium-color;
+  }
+  
+  .bar {
+    height: 20px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: $main-color;
+  }
+
+  &__bar-70 {
+    width: 70%;
+  }
+  
+  &__bar-80 {
+    width: 80%;
+  }
+  
+  &__bar-90 {
+    width: 90%;
+  }
+  
+  &__bar-100 {
+    width: 100%;
   }
 }
