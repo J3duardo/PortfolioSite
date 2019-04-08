@@ -188,10 +188,6 @@ img {
   text-align: center;
   padding-bottom: 3rem;
 
-  & .container {
-
-  }
-
   & .container > h2{
     position: relative;
     padding-bottom: 1rem;
@@ -369,10 +365,6 @@ img {
     &::after {
       @extend %bottom-border;
     }
-  }
-
-  h4 {
-
   }
 
   &__bar-container {
