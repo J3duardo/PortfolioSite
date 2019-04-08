@@ -12,7 +12,7 @@
   border: none;
   cursor: pointer; }
 
-.specialize__title::after, .process .container > h2::after, .about-me__title::after, .progress-bars__title::after {
+.specialize__title::after, .process .container > h2::after, .about-me__title::after, .progress-bars__title::after, .testimonials__title::after {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -41,7 +41,8 @@ input[class^="btn-"]:hover {
 
 .lead {
   font-size: 1.3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  text-align: center; }
 
 .text-center {
   text-align: center; }
@@ -115,8 +116,6 @@ img {
     .header-home__content h1 {
       font-size: 3.5rem;
       line-height: 1.2; }
-  .header-home__lead {
-    margin-bottom: 1rem; }
 
 .header-about {
   background-image: linear-gradient(to right, #00000070, #00000070), url("../img/showcase.jpg");
@@ -136,9 +135,6 @@ img {
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 300; }
-  .specialize__lead {
-    margin-bottom: 2rem;
-    font-size: 1.3rem; }
   .specialize__specials {
     display: flex;
     justify-content: space-between;
@@ -324,3 +320,36 @@ img {
     .about-logos__logo img {
       display: block;
       width: 100%; }
+
+/* Estilos de la sección testimonials */
+.testimonials {
+  padding: 2rem 0; }
+  .testimonials__title {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300; }
+  .testimonials__lead {
+    margin-bottom: 1rem;
+    text-align: center; }
+  .testimonials__testimonials-container {
+    display: flex;
+    justify-content: space-between; }
+  .testimonials__testimonial {
+    width: 24%; }
+    .testimonials__testimonial > p {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px; }
+  .testimonials__client {
+    display: flex;
+    align-items: center; }
+    .testimonials__client img {
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin-right: 1rem;
+      border-radius: 50%; }
