@@ -310,3 +310,17 @@ img {
     width: 90%; }
   .progress-bars__bar-100 {
     width: 100%; }
+
+/* Estilos de los logos */
+.about-logos {
+  padding: 4rem 0;
+  background-color: #f4f4f4; }
+  .about-logos .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .about-logos__logo {
+    width: 18%; }
+    .about-logos__logo img {
+      display: block;
+      width: 100%; }

@@ -412,3 +412,24 @@ img {
     width: 100%;
   }
 }
+
+/* Estilos de los logos */
+.about-logos {
+  padding: 4rem 0;
+  background-color: $light-color;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 18%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
