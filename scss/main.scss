@@ -112,16 +112,8 @@ img {
     padding: 2rem 0;
   }
 
-  &__title {
-    position: relative;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-weight: 300;
-
-    &::after {
-      @extend %bottom-border;
-    }
+  .title::after {
+    @extend %bottom-border;
   }
 
   &__specials {
@@ -188,16 +180,8 @@ img {
   text-align: center;
   padding-bottom: 3rem;
 
-  & .container > h2{
-    position: relative;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-weight: 300;
-
-    &::after {
-      @extend %bottom-border;
-    }
+  .title::after {
+    @extend %bottom-border;
   }
 
   &__items {
@@ -303,16 +287,8 @@ img {
     padding: 3rem 0;
   }
 
-  &__title {
-    position: relative;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-weight: 300;
-
-    &::after {
-      @extend %bottom-border;
-    }
+  .title::after {
+    @extend %bottom-border;
   }
 
   &__info {
@@ -354,17 +330,8 @@ img {
   color: #fff;
   background-color: $dark-color;
 
-  &__title {
-    position: relative;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 300;
-
-    &::after {
-      @extend %bottom-border;
-    }
+  .title::after {
+    @extend %bottom-border;
   }
 
   &__bar-container {
@@ -422,22 +389,8 @@ img {
 .testimonials {
   padding: 3rem 0;
 
-  &__title {
-    position: relative;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 300;
-
-    &::after {
-      @extend %bottom-border;
-    }
-  }
-
-  &__lead {
-    margin-bottom: 1rem;
-    text-align: center;
+  .title::after {
+    @extend %bottom-border;
   }
 
   &__testimonials-container {
