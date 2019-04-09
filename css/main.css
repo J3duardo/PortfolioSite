@@ -433,7 +433,13 @@ img {
   .header-home {
     height: 30rem; }
     .header-home__content {
-      top: 50%; } }
+      top: 50%; }
+  .specialize__specials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem; }
+    .specialize__specials div {
+      padding: 0 1rem; } }
 
 @media (max-width: 500px) {
   .main-nav {
@@ -443,4 +449,12 @@ img {
     height: 10rem;
     border-bottom: 3px solid #ffbc00; }
     .header-home__content {
-      display: none; } }
+      display: none; }
+  .specialize .container {
+    padding: 2rem 1rem; }
+  .specialize__specials {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem; }
+    .specialize__specials div {
+      padding: 0; } }
