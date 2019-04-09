@@ -124,7 +124,9 @@ img {
     text-align: center; }
     .header-home__content h1 {
       font-size: 3.5rem;
-      line-height: 1.2; }
+      margin-bottom: 0.5rem; }
+    .header-home__content .lead {
+      font-size: 1rem; }
 
 .header-about {
   background-image: linear-gradient(to right, #00000070, #00000070), url("../img/showcase.jpg");
@@ -433,6 +435,9 @@ img {
     height: 30rem; }
     .header-home__content {
       top: 50%; }
+    .header-home h1 {
+      font-size: 2.5rem;
+      line-height: 1; }
   .specialize__specials {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
