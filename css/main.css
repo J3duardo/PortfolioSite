@@ -360,7 +360,7 @@ img {
       left: 0;
       width: 100%;
       height: 100%;
-      transform: translateX(-50%) rotate(-45deg) scale(2, 0);
+      transform: translateX(-50%) rotate(-30deg) scale(2, 0);
       transform-origin: top center;
       background-color: rgba(255, 188, 0, 0.9);
       z-index: 10;
@@ -369,4 +369,4 @@ img {
       transform: translate(-50%, -50%);
       opacity: 1; }
     .my-work__gallery-item:hover .my-work__gallery-item-overlay {
-      transform: translateX(-50%) rotate(-45deg) scale(2, 2); }
+      transform: translateX(-50%) rotate(-30deg) scale(2, 2); }
