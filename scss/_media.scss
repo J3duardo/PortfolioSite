@@ -22,6 +22,24 @@
       }
     }
   }
+
+  // Home --> Stats
+  .stats {
+
+    &__container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0.5rem;
+    }
+
+    &__item:first-of-type, &__item:nth-of-type(4) {
+      background-color: $light-color;
+    }
+
+    &__item:nth-of-type(2), &__item:nth-of-type(3) {
+      background-color: $medium-color;
+    }
+  }
 }
 
 // Smartphones
@@ -56,6 +74,22 @@
       div {
         padding: 0;
       }
+    }
+  }
+
+  // Home --> Stats
+  .stats {
+
+    &__container{
+      grid-template-columns: 1fr;
+    }
+
+    &__item:nth-child(odd) {
+      background-color: $light-color;
+    }
+  
+    &__item:nth-child(even) {
+      background-color: $medium-color;
     }
   }
 }

@@ -154,8 +154,7 @@ img {
   text-align: center;
   padding-bottom: 3rem; }
   .stats__container {
-    display: flex;
-    background-color: cadetblue; }
+    display: flex; }
   .stats__item {
     flex-basis: 25%;
     padding: 3rem; }
@@ -439,7 +438,15 @@ img {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem; }
     .specialize__specials div {
-      padding: 0 1rem; } }
+      padding: 0 1rem; }
+  .stats__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem; }
+  .stats__item:first-of-type, .stats__item:nth-of-type(4) {
+    background-color: #f4f4f4; }
+  .stats__item:nth-of-type(2), .stats__item:nth-of-type(3) {
+    background-color: #ccc; } }
 
 @media (max-width: 500px) {
   .main-nav {
@@ -457,4 +464,10 @@ img {
     grid-template-columns: 1fr;
     grid-gap: 1.5rem; }
     .specialize__specials div {
-      padding: 0; } }
+      padding: 0; }
+  .stats__container {
+    grid-template-columns: 1fr; }
+  .stats__item:nth-child(odd) {
+    background-color: #f4f4f4; }
+  .stats__item:nth-child(even) {
+    background-color: #ccc; } }
