@@ -114,6 +114,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
+  background-attachment: fixed;
   color: #fff; }
   .header-home__content {
     position: absolute;
