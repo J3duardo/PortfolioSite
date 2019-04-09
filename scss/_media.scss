@@ -40,6 +40,20 @@
       background-color: $medium-color;
     }
   }
+
+  // Home --> Creative process
+  .process {
+
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.5rem;
+  
+      & > div {
+        width: auto;
+      }
+    }
+  }
 }
 
 // Smartphones
@@ -90,6 +104,19 @@
   
     &__item:nth-child(even) {
       background-color: $medium-color;
+    }
+  }
+
+  // Home --> Creative process
+  .process {
+
+    .container{
+      padding: 0 1rem;
+    }
+
+    &__items {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
     }
   }
 }
