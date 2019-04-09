@@ -20,7 +20,7 @@
   font-size: 2rem;
   font-weight: 300; }
 
-.specialize .title::after, .process .title::after, .about-me .title::after, .progress-bars .title::after, .testimonials .title::after, .my-work .title::after {
+.specialize .title::after, .process .title::after, .about-me .title::after, .progress-bars .title::after, .testimonials .title::after, .my-work .title::after, .contact .title::after {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -375,3 +375,34 @@ img {
       transform: scale(1.2); }
     .my-work__gallery-item:hover .my-work__gallery-item-overlay {
       transform: translateX(-50%) rotate(-30deg) scale(2, 2); }
+
+/* Estilos de la página contact */
+.contact {
+  padding: 3rem 0; }
+  .contact__form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 5rem; }
+    .contact__form-inputs input, .contact__form-inputs textarea {
+      display: block;
+      padding: 0.5rem;
+      width: 100%;
+      font-family: inherit; }
+    .contact__form-inputs textarea {
+      grid-column: 1/-1; }
+  .contact__btn {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    transition: all 500ms ease-in-out; }
+    .contact__btn:hover {
+      background-color: #ffbc00;
+      color: #333; }

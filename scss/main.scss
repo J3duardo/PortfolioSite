@@ -500,3 +500,54 @@ img {
     }
   }
 }
+
+
+/* Estilos de la página contact */
+.contact {
+  padding: 3rem 0;
+
+  .title::after {
+    @extend %bottom-border;
+  }
+
+  &__form {
+
+  }
+
+  &__form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 5rem;
+
+    input, textarea {
+      display: block;
+      padding: 0.5rem;
+      width: 100%;
+      font-family: inherit;
+    }
+
+    textarea {
+      grid-column: 1/-1;
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: $dark-color;
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+      background-color: $main-color;
+      color: $dark-color;
+    }
+  }
+}
