@@ -504,7 +504,10 @@ img {
 
 /* Estilos de la página contact */
 .contact {
-  padding: 3rem 0;
+
+  .container {
+    padding: 3rem 0;
+  }
 
   .title::after {
     @extend %bottom-border;
@@ -548,6 +551,32 @@ img {
     &:hover {
       background-color: $main-color;
       color: $dark-color;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    color: #fff;
+    background-color: $dark-color;
+
+    &-icon {
+      width: 30%;
+      text-align: center;
+
+      i {
+
+      }
+
+      h3 {
+
+      }
+
+      p{
+
+      }
     }
   }
 }
