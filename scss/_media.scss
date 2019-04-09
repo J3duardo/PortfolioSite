@@ -73,6 +73,18 @@
     }
   }
 
+  // Footer
+  .footer {
+
+    .container {
+      flex-direction: column;
+    }
+
+    &__copyright {
+      margin-bottom: 1rem;
+    }
+  }
+
   // Home --> Specialize
   .specialize {
 

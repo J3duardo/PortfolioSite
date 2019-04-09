@@ -463,6 +463,10 @@ img {
     border-bottom: 3px solid #ffbc00; }
     .header-home__content {
       display: none; }
+  .footer .container {
+    flex-direction: column; }
+  .footer__copyright {
+    margin-bottom: 1rem; }
   .specialize .container {
     padding: 2rem 1rem; }
   .specialize__specials {
