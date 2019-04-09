@@ -20,7 +20,7 @@
   font-size: 2rem;
   font-weight: 300; }
 
-.specialize .title::after, .process .title::after, .about-me .title::after, .progress-bars .title::after, .testimonials .title::after {
+.specialize .title::after, .process .title::after, .about-me .title::after, .progress-bars .title::after, .testimonials .title::after, .my-work .title::after {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -326,3 +326,47 @@ img {
       height: 50px;
       margin-right: 1rem;
       border-radius: 50%; }
+
+/* Estilos de la sección my work */
+.my-work {
+  padding: 3rem 0; }
+  .my-work__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  .my-work__gallery-item {
+    position: relative;
+    overflow: hidden; }
+    .my-work__gallery-item-text {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -120%);
+      opacity: 0;
+      text-align: center;
+      text-transform: uppercase;
+      z-index: 20;
+      transition: all 700ms 200ms ease-in-out; }
+      .my-work__gallery-item-text p {
+        font-size: 1.5rem; }
+      .my-work__gallery-item-text h3 {
+        font-size: 2rem; }
+      .my-work__gallery-item-text img {
+        display: block;
+        width: 100%; }
+    .my-work__gallery-item-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateX(-50%) rotate(-45deg) scale(2, 0);
+      transform-origin: top center;
+      background-color: rgba(255, 188, 0, 0.9);
+      z-index: 10;
+      transition: all 700ms ease-in-out; }
+    .my-work__gallery-item:hover .my-work__gallery-item-text {
+      transform: translate(-50%, -50%);
+      opacity: 1; }
+    .my-work__gallery-item:hover .my-work__gallery-item-overlay {
+      transform: translateX(-50%) rotate(-45deg) scale(2, 2); }
