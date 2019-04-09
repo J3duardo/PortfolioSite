@@ -465,7 +465,8 @@ img {
     flex-direction: column;
     align-items: center; }
   .header-home {
-    height: 10rem;
+    height: auto;
+    padding: 0.5rem 0;
     border-bottom: 3px solid #ffbc00; }
     .header-home__content {
       display: none; }

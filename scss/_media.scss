@@ -71,7 +71,8 @@
   }
 
   .header-home {
-    height: 10rem;
+    height: auto;
+    padding: 0.5rem 0;
     border-bottom: 3px solid $main-color;
 
     &__content {
