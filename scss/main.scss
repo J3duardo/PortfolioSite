@@ -452,7 +452,7 @@ img {
       text-transform: uppercase;
       z-index: 20;
 
-      transition: all 700ms 200ms ease-in-out;
+      transition: all 1500ms 200ms cubic-bezier(.16,.74,.58,.99);
 
       p {
         font-size: 1.5rem;
@@ -479,16 +479,18 @@ img {
       background-color: rgba($main-color, 0.9);
       z-index: 10;
 
-      transition: all 700ms ease-in-out;
+      transition: all 1500ms cubic-bezier(.16,.74,.58,.99);
     }
 
     &:hover &-text {
       transform: translate(-50%, -50%);
       opacity: 1;
+      transition: all 1500ms 200ms cubic-bezier(.16,.74,.58,.99);
     }
 
     &:hover &-overlay {
       transform: translateX(-50%) rotate(-30deg) scale(2, 2);
+      transition: all 1500ms 200ms cubic-bezier(.16,.74,.58,.99);
     }
   }
 }
