@@ -419,3 +419,11 @@ img {
   .contact__icons-icon {
     width: 30%;
     text-align: center; }
+
+.contact__copy {
+  padding: 4rem 0;
+  background-color: #ffbc00; }
+  .contact__copy h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #fff; }

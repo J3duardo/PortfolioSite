@@ -565,18 +565,17 @@ img {
     &-icon {
       width: 30%;
       text-align: center;
+    }
+  }
 
-      i {
+  &__copy {
+    padding: 4rem 0;
+    background-color: $main-color;
 
-      }
-
-      h3 {
-
-      }
-
-      p{
-
-      }
+    h1{
+      font-size: 4rem;
+      text-align: center;
+      color: #fff;
     }
   }
 }
