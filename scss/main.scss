@@ -462,10 +462,13 @@ img {
         font-size: 2rem;
       }
 
-      img {
-        display: block;
-        width: 100%;
-      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      transform: scale(1);
+      transition: transform 1500ms cubic-bezier(.16,.74,.58,.99);
     }
 
     &-overlay {
@@ -485,12 +488,14 @@ img {
     &:hover &-text {
       transform: translate(-50%, -50%);
       opacity: 1;
-      transition: all 1500ms 200ms cubic-bezier(.16,.74,.58,.99);
+    }
+
+    &:hover img {
+      transform: scale(1.2);
     }
 
     &:hover &-overlay {
       transform: translateX(-50%) rotate(-30deg) scale(2, 2);
-      transition: all 1500ms 200ms cubic-bezier(.16,.74,.58,.99);
     }
   }
 }
