@@ -115,6 +115,24 @@
       }
     }
   }
+
+  // About me --> Testimonials
+  .testimonials {
+
+    &__testimonials-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+
+    &__testimonial {
+      width: auto;
+    }
+
+    &__client {
+      justify-content: center;
+    }
+  }
 }
 
 
@@ -204,13 +222,24 @@
       grid-template-columns: 1fr;
       grid-column-gap: 3rem;
     }
-  
-    &__logo {
-      
+  }
 
-      img {
-        
-      }
+
+  // About me --> Testimonials
+  .testimonials {
+
+    &__testimonials-container {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+    }
+
+    &__testimonial {
+      padding-bottom: 1rem;
+      border-bottom: 2px solid $light-color;
+    }
+
+    &__client {
+      
     }
   }
 }
