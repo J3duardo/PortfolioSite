@@ -776,6 +776,7 @@ img {
   }
   .about-me__info-content {
     width: 100%;
+    max-width: 700px;
   }
   .about-me__awards-container {
     display: block;
