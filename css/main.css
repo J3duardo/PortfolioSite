@@ -838,8 +838,14 @@ img {
   .my-work__gallery-item h3 {
     font-size: 1.5rem;
   }
+  .contact .container {
+    padding: 2rem 0;
+  }
+  .contact__icons {
+    padding: 2rem 0;
+  }
   .contact__copy {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
   .contact__copy h1 {
     font-size: 3rem;

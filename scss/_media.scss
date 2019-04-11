@@ -178,8 +178,17 @@
 
   // Contact
   .contact {
+
+    .container {
+      padding: 2rem 0;
+    }
+
+    &__icons {
+      padding: 2rem 0;
+    }
+
     &__copy {
-      padding: 3rem 0;
+      padding: 2rem 0;
   
       h1 {
         font-size: 3rem;
