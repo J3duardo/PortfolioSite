@@ -704,6 +704,9 @@ img {
 
 /* Importar media queries para resposive design */
 @media (max-width: 800px) {
+  html {
+    font-size: 15px;
+  }
   .header-home {
     height: 30rem;
     background-position: center -10rem;
@@ -854,6 +857,9 @@ img {
 }
 
 @media (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
   .main-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

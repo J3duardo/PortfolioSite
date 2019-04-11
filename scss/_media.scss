@@ -1,5 +1,10 @@
 // Tablets
 @media (max-width: 800px) {
+  //HTML
+  html {
+    font-size: 15px;
+  }
+
   // Header
   .header-home {
     height: 30rem;
@@ -201,6 +206,11 @@
 
 // Smartphones
 @media (max-width: 500px) {
+  //HTML
+  html {
+    font-size: 14px;
+  }
+
   // Header
   .main-nav {
     flex-direction: column;
