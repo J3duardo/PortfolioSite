@@ -627,6 +627,10 @@ img {
   padding: 3rem 0;
 }
 
+.contact__form {
+  padding: 0 1rem;
+}
+
 .contact__form-inputs {
   display: -ms-grid;
   display: grid;
@@ -894,6 +898,10 @@ img {
     padding: 0;
   }
   .my-work__gallery {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contact__form-inputs {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }

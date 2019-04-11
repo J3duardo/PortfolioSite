@@ -275,4 +275,13 @@
       grid-template-columns: 1fr;
     }
   }
+
+
+  // Contact --> Form
+  .contact {
+
+    &__form-inputs {
+      grid-template-columns: 1fr;
+    }
+  }
 }
