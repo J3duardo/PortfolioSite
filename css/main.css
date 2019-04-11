@@ -781,7 +781,7 @@ img {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 4rem;
   }
   .about-logos__logo {
     width: auto;
