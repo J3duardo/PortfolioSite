@@ -738,6 +738,12 @@ img {
   .stats__item:nth-of-type(2), .stats__item:nth-of-type(3) {
     background-color: #ccc;
   }
+  .stats {
+    padding-bottom: 2rem;
+  }
+  .process {
+    padding-bottom: 2rem;
+  }
   .process__items {
     display: -ms-grid;
     display: grid;

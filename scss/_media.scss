@@ -48,7 +48,12 @@
   }
 
   // Home --> Creative process
+  .stats {
+    padding-bottom: 2rem;
+  }
+
   .process {
+    padding-bottom: 2rem;
 
     &__items {
       display: grid;
@@ -61,6 +66,7 @@
     }
   }
 
+  
   // About me
   .about-me {
 
