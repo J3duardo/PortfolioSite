@@ -60,6 +60,25 @@
       }
     }
   }
+
+  // About me
+  .about-me {
+
+    &__info {
+      flex-direction: column;
+      align-items: center;
+
+      &-img {
+        min-width: 280px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+
+      &-content {
+        width: 100%;
+      }
+    }
+  }
 }
 
 // Smartphones

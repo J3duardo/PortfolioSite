@@ -297,11 +297,12 @@ img {
 
   &__info {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 2rem;
 
     &-img {
       display: block;
-      width: 35%;
+      width: 40%;
       margin-right: 1rem;
     }
 
