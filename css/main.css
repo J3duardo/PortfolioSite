@@ -905,5 +905,15 @@ img {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .contact__icons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact__icons-icon {
+    width: 100%;
+  }
+  .contact__icons-icon:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
