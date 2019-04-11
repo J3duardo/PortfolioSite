@@ -761,6 +761,16 @@ img {
   .about-me__info-content {
     width: 100%;
   }
+  .about-me__awards-container {
+    display: block;
+  }
+  .about-me__award {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f4f4f4;
+  }
+  .about-me__award:not(:first-of-type) {
+    padding-top: 1rem;
+  }
 }
 
 @media (max-width: 500px) {
