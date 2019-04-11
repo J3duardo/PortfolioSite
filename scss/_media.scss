@@ -70,6 +70,10 @@
   // About me
   .about-me {
 
+    .container {
+      padding: 2rem 0;
+    }
+
     &__info {
       flex-direction: column;
       align-items: center;
@@ -101,6 +105,11 @@
   }
 
 
+  // About me --> progress bars
+  .progress-bars {
+    padding: 2rem 0;
+  }
+
   // About me --> Logos
   .about-logos {
     
@@ -124,6 +133,7 @@
 
   // About me --> Testimonials
   .testimonials {
+    padding: 2rem 0;
 
     &__testimonials-container {
       display: grid;
