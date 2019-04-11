@@ -802,6 +802,20 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .my-work .container {
+    padding: 0;
+  }
+  .my-work__gallery {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .my-work__gallery-item p {
+    font-size: 1rem;
+  }
+  .my-work__gallery-item h3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -875,6 +889,13 @@ img {
   .testimonials__testimonial {
     padding-bottom: 1rem;
     border-bottom: 2px solid #f4f4f4;
+  }
+  .my-work .container {
+    padding: 0;
+  }
+  .my-work__gallery {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */

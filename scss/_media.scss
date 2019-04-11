@@ -133,6 +133,30 @@
       justify-content: center;
     }
   }
+
+  // Work --> my-work
+  .my-work {
+
+    .container {
+      padding: 0;
+    }
+
+    &__gallery {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
+
+    &__gallery-item {
+
+      p {
+        font-size: 1rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 
 
@@ -237,9 +261,18 @@
       padding-bottom: 1rem;
       border-bottom: 2px solid $light-color;
     }
+  }
 
-    &__client {
-      
+
+  // Work --> my-work
+  .my-work {
+
+    .container {
+      padding: 0;
+    }
+
+    &__gallery {
+      grid-template-columns: 1fr;
     }
   }
 }
