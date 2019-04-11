@@ -157,8 +157,20 @@
       }
     }
   }
-}
 
+
+  // Contact
+  .contact {
+    &__copy {
+      padding: 3rem 0;
+  
+      h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+      }
+    }
+  }
+}
 
 
 // Smartphones
@@ -282,6 +294,10 @@
 
     &__form-inputs {
       grid-template-columns: 1fr;
+    }
+
+    &__btn {
+      min-width: 150px;
     }
 
     &__icons {
