@@ -969,7 +969,8 @@ img {
   .about-me__award,
   .progress-bars h4,
   .about-logos__logo,
-  .testimonials__testimonial {
+  .testimonials__testimonial,
+  .my-work__gallery-item {
     -webkit-transform: translateY(70%);
             transform: translateY(70%);
     opacity: 0;

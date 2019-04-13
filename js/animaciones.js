@@ -63,9 +63,6 @@ const processItemsContainer = document.querySelector(".process__items");
 const processItems = Array.from(document.querySelectorAll(".process__items > div"));
 
 
-/* ------------------------------------------- */
-/* ---------- Elementos del about me --------- */
-/* ------------------------------------------- */
 const aboutMeInfo = document.querySelector(".about-me__info");
 const aboutMeInfoItems = Array.from(document.querySelectorAll(".about-me__info > div"));
 
@@ -81,6 +78,13 @@ const aboutLogos = Array.from(document.querySelectorAll(".about-logos__logo"));
 
 const testimonialsContainer = document.querySelector(".testimonials__testimonials-container");
 const testimonials = Array.from(document.querySelectorAll(".testimonials__testimonial"));
+
+
+/* ------------------------------------------- */
+/* ---------- Elementos del about me --------- */
+/* ------------------------------------------- */
+const galleryContainer = document.querySelector(".my-work__gallery");
+const galleryItems = Array.from(document.querySelectorAll(".my-work__gallery-item"));
 
 
 //Animación de los elementos de cada página
@@ -116,9 +120,12 @@ switch(window.location.pathname) {
 
   //Elementos del work
   case("/work.html"):
-    window.addEventListener("scroll", () => {
-      console.log("Scrolled from work");
-    })
+  window.onload = () => {
+    document.querySelector(".my-work .title").setAttribute("id", "reveal");
+    document.querySelector(".my-work .lead").setAttribute("id", "reveal");
+
+    revealElements(galleryContainer, galleryItems);
+  }
   break;
 
   //Elementos del contact me
