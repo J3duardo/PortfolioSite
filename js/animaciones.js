@@ -115,14 +115,14 @@ const copy = [document.querySelector(".contact__copy h1")];
 switch(window.location.pathname) {
   //Elementos del home
   case("/index.html"):
-    if(window,innerWidth < 500) {
+    if(window,innerWidth <= 500) {
       onLoadHandler(".specialize .title")
       onLoadHandler(".specialize .lead");
       onLoadHandler(".specialize__specials div");
     }
 
     window.addEventListener("scroll", () => {
-      // revealElements(specialsContainer, specials);
+      revealElements(specialsContainer, specials);
       revealElements(statsContainer, statsItems);
       revealElements(processItemsContainer, processItems);
     });    
