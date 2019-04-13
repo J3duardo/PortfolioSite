@@ -957,7 +957,7 @@ img {
   }
 }
 
-@media (min-width: 100px) {
+@media (min-width: 300px) {
   .container .title,
   .container .lead,
   .container .footer__copyright,
