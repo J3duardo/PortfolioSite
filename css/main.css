@@ -957,7 +957,7 @@ img {
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 100px) {
   .container .title,
   .container .lead,
   .container .footer__copyright,
@@ -970,7 +970,11 @@ img {
   .progress-bars h4,
   .about-logos__logo,
   .testimonials__testimonial,
-  .my-work__gallery-item {
+  .my-work__gallery-item,
+  .contact__form-inputs > *,
+  .contact__btn,
+  .contact__icons-icon,
+  .contact__copy h1 {
     -webkit-transform: translateY(70%);
             transform: translateY(70%);
     opacity: 0;

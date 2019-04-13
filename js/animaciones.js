@@ -49,6 +49,13 @@ const revealProgressBars = (bars) => {
   })
 }
 
+//Revelar elementos cuando cargue la página
+const onLoadHandler = (selector) => {
+  document.querySelectorAll(selector).forEach(el => {
+    el.setAttribute("id", "reveal");
+  })
+}
+
 
 /* ------------------------------------------- */
 /* ---------- Elementos del home ------------- */
@@ -63,6 +70,9 @@ const processItemsContainer = document.querySelector(".process__items");
 const processItems = Array.from(document.querySelectorAll(".process__items > div"));
 
 
+/* ------------------------------------------- */
+/* ------------ Elementos del work ----------- */
+/* ------------------------------------------- */
 const aboutMeInfo = document.querySelector(".about-me__info");
 const aboutMeInfoItems = Array.from(document.querySelectorAll(".about-me__info > div"));
 
@@ -87,22 +97,42 @@ const galleryContainer = document.querySelector(".my-work__gallery");
 const galleryItems = Array.from(document.querySelectorAll(".my-work__gallery-item"));
 
 
+/* ------------------------------------------- */
+/* --------- Elementos del contact------------ */
+/* ------------------------------------------- */
+const formContainer = document.querySelector(".contact__form-inputs");
+const formInputs = Array.from(document.querySelectorAll(".contact__form-inputs > *"));
+const formButton = document.querySelector(".contact__btn");
+const formItems = [...formInputs, formButton];
+const iconsContainer = document.querySelector(".contact__icons");
+const iconsArray = Array.from(document.querySelectorAll(".contact__icons-icon"));
+const copyContainer = document.querySelector(".contact__copy");
+const copy = [document.querySelector(".contact__copy h1")];
+
+
+
 //Animación de los elementos de cada página
 switch(window.location.pathname) {
   //Elementos del home
   case("/index.html"):
+    if(window,innerWidth < 500) {
+      onLoadHandler(".specialize .title")
+      onLoadHandler(".specialize .lead");
+      onLoadHandler(".specialize__specials div");
+    }
+
     window.addEventListener("scroll", () => {
-      revealElements(specialsContainer, specials);
+      // revealElements(specialsContainer, specials);
       revealElements(statsContainer, statsItems);
       revealElements(processItemsContainer, processItems);
-    });
+    });    
   break;
   
-  //Elementos del about me
+  //Animación de los elementos del about me
   case("/about.html"):
     window.onload = () => {
-      document.querySelector(".about-me .title").setAttribute("id", "reveal");
-      document.querySelector(".about-me .lead").setAttribute("id", "reveal");
+      onLoadHandler(".about-me .title");
+      onLoadHandler(".about-me .lead");
       revealElements(aboutMeInfo, aboutMeInfoItems);
     }
     window.addEventListener("scroll", () => {
@@ -118,20 +148,25 @@ switch(window.location.pathname) {
     });
   break;
 
-  //Elementos del work
+  //Animación de los elementos del work
   case("/work.html"):
-  window.onload = () => {
-    document.querySelector(".my-work .title").setAttribute("id", "reveal");
-    document.querySelector(".my-work .lead").setAttribute("id", "reveal");
-
-    revealElements(galleryContainer, galleryItems);
-  }
+    window.onload = () => {
+      onLoadHandler(".my-work .title");
+      onLoadHandler(".my-work .lead");
+      revealElements(galleryContainer, galleryItems);
+    }
   break;
 
-  //Elementos del contact me
+  //Animación de los elementos del contact me
   case("/contact.html"):
+    window.onload = () => {
+      onLoadHandler(".contact .title");
+      onLoadHandler(".contact .lead");
+      revealElements(formContainer, formItems);
+    }
     window.addEventListener("scroll", () => {
-      console.log("Scrolled from contact me");
+      revealElements(iconsContainer, iconsArray);
+      revealElements(copyContainer, copy);
     })
   break;
 }
