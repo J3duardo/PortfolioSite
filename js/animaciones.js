@@ -9,7 +9,6 @@
 // })
 
 
-
 /* ------------------------------------------- */
 /* --------- Elementos generales ------------- */
 /* ------------------------------------------- */
@@ -112,61 +111,49 @@ const copy = [document.querySelector(".contact__copy h1")];
 
 
 //Animación de los elementos de cada página
-switch(window.location.pathname) {
-  //Elementos del home
-  case("/index.html"):
-    if(window,innerWidth <= 500) {
-      onLoadHandler(".specialize .title")
-      onLoadHandler(".specialize .lead");
-      onLoadHandler(".specialize__specials div");
-    }
+if(window.location.href.endsWith("/index.html")) {
+  if(window,innerWidth <= 500) {
+    onLoadHandler(".specialize .title")
+    onLoadHandler(".specialize .lead");
+    onLoadHandler(".specialize__specials div");
+  }
 
-    window.addEventListener("scroll", () => {
-      revealElements(specialsContainer, specials);
-      revealElements(statsContainer, statsItems);
-      revealElements(processItemsContainer, processItems);
-    });    
-  break;
-  
-  //Animación de los elementos del about me
-  case("/about.html"):
-    window.onload = () => {
-      onLoadHandler(".about-me .title");
-      onLoadHandler(".about-me .lead");
-      revealElements(aboutMeInfo, aboutMeInfoItems);
-    }
-    window.addEventListener("scroll", () => {
-      revealElements(awardsContainer, awardsArray);
-      revealElements(progressBarsContainer, progressBarsTitles);
+  window.addEventListener("scroll", () => {
+    revealElements(specialsContainer, specials);
+    revealElements(statsContainer, statsItems);
+    revealElements(processItemsContainer, processItems);
+  });
+} else if (window.location.href.endsWith("/about.html")) {
+  window.onload = () => {
+    onLoadHandler(".about-me .title");
+    onLoadHandler(".about-me .lead");
+    revealElements(aboutMeInfo, aboutMeInfoItems);
+  }
+  window.addEventListener("scroll", () => {
+    revealElements(awardsContainer, awardsArray);
+    revealElements(progressBarsContainer, progressBarsTitles);
 
-      if (progressBarsContainer.getBoundingClientRect().top <= window.innerHeight * 0.7 || window.innerHeight + window.pageYOffset >= document.body.offsetHeight){
-        revealProgressBars(progressBarsArray)
-      };
+    if (progressBarsContainer.getBoundingClientRect().top <= window.innerHeight * 0.7 || window.innerHeight + window.pageYOffset >= document.body.offsetHeight){
+      revealProgressBars(progressBarsArray)
+    };
 
-      revealElements(aboutLogosContainer, aboutLogos);
-      revealElements(testimonialsContainer, testimonials);
-    });
-  break;
-
-  //Animación de los elementos del work
-  case("/work.html"):
-    window.onload = () => {
-      onLoadHandler(".my-work .title");
-      onLoadHandler(".my-work .lead");
-      revealElements(galleryContainer, galleryItems);
-    }
-  break;
-
-  //Animación de los elementos del contact me
-  case("/contact.html"):
-    window.onload = () => {
-      onLoadHandler(".contact .title");
-      onLoadHandler(".contact .lead");
-      revealElements(formContainer, formItems);
-    }
-    window.addEventListener("scroll", () => {
-      revealElements(iconsContainer, iconsArray);
-      revealElements(copyContainer, copy);
-    })
-  break;
+    revealElements(aboutLogosContainer, aboutLogos);
+    revealElements(testimonialsContainer, testimonials);
+  });
+} else if (window.location.href.endsWith("/work.html")) {
+  window.onload = () => {
+    onLoadHandler(".my-work .title");
+    onLoadHandler(".my-work .lead");
+    revealElements(galleryContainer, galleryItems);
+  }
+} else if (window.location.href.endsWith("/contact.html")) {
+  window.onload = () => {
+    onLoadHandler(".contact .title");
+    onLoadHandler(".contact .lead");
+    revealElements(formContainer, formItems);
+  }
+  window.addEventListener("scroll", () => {
+    revealElements(iconsContainer, iconsArray);
+    revealElements(copyContainer, copy);
+  })
 }
