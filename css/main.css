@@ -964,10 +964,23 @@ img {
   .container .footer__icons,
   .specialize__specials div,
   .stats__item,
-  .process__items > div {
+  .process__items > div,
+  .about-me__info > div,
+  .about-me__award,
+  .progress-bars h4,
+  .about-logos__logo,
+  .testimonials__testimonial {
     -webkit-transform: translateY(70%);
             transform: translateY(70%);
     opacity: 0;
+    -webkit-transition: all 750ms;
+    transition: all 750ms;
+  }
+  .progress-bars__bar-container {
+    -webkit-transform-origin: left center;
+            transform-origin: left center;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
     -webkit-transition: all 750ms;
     transition: all 750ms;
   }
@@ -975,6 +988,10 @@ img {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+  }
+  #revealProgressBars {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 /*# sourceMappingURL=main.css.map */

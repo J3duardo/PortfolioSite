@@ -19,8 +19,6 @@ const footerText = document.querySelector(".footer__copyright");
 const footerIcons = document.querySelector(".footer__icons");
 const elementsArray = [...sectionsTitles, ...sectionsLeadTexts, footerText, footerIcons];
 
-console.log(window.location.pathname)
-
 
 // Animación de los elementos generales
 window.addEventListener("scroll", () => {
@@ -43,11 +41,18 @@ const revealElements = (container, items) => {
   }
 }
 
+const revealProgressBars = (bars) => {
+  bars.forEach((bar, i) => {
+    setTimeout(() => {
+      bar.setAttribute("id", "revealProgressBars")
+    }, i*250);
+  })
+}
+
 
 /* ------------------------------------------- */
 /* ---------- Elementos del home ------------- */
 /* ------------------------------------------- */
-
 const specialsContainer = document.querySelector(".specialize__specials");
 const specials = Array.from(document.querySelectorAll(".specialize__specials div"));
 
@@ -55,7 +60,27 @@ const statsContainer = document.querySelector(".stats__container");
 const statsItems = Array.from(document.querySelectorAll(".stats__item"));
 
 const processItemsContainer = document.querySelector(".process__items");
-const processItems = Array.from(document.querySelectorAll(".process__items > div"))
+const processItems = Array.from(document.querySelectorAll(".process__items > div"));
+
+
+/* ------------------------------------------- */
+/* ---------- Elementos del about me --------- */
+/* ------------------------------------------- */
+const aboutMeInfo = document.querySelector(".about-me__info");
+const aboutMeInfoItems = Array.from(document.querySelectorAll(".about-me__info > div"));
+
+const awardsContainer = document.querySelector(".about-me__awards-container");
+const awardsArray = Array.from(document.querySelectorAll(".about-me__award"));
+
+const progressBarsContainer = document.querySelector(".progress-bars .container");
+const progressBarsTitles = Array.from(document.querySelectorAll(".progress-bars h4"));
+const progressBarsArray = Array.from(document.querySelectorAll(".progress-bars__bar-container"));
+
+const aboutLogosContainer = document.querySelector(".about-logos");
+const aboutLogos = Array.from(document.querySelectorAll(".about-logos__logo"));
+
+const testimonialsContainer = document.querySelector(".testimonials__testimonials-container");
+const testimonials = Array.from(document.querySelectorAll(".testimonials__testimonial"));
 
 
 //Animación de los elementos de cada página
@@ -63,7 +88,6 @@ switch(window.location.pathname) {
   //Elementos del home
   case("/index.html"):
     window.addEventListener("scroll", () => {
-      console.log("Scrolled from index")
       revealElements(specialsContainer, specials);
       revealElements(statsContainer, statsItems);
       revealElements(processItemsContainer, processItems);
@@ -72,9 +96,22 @@ switch(window.location.pathname) {
   
   //Elementos del about me
   case("/about.html"):
+    window.onload = () => {
+      document.querySelector(".about-me .title").setAttribute("id", "reveal");
+      document.querySelector(".about-me .lead").setAttribute("id", "reveal");
+      revealElements(aboutMeInfo, aboutMeInfoItems);
+    }
     window.addEventListener("scroll", () => {
-      console.log("Scrolled from about me");
-    })
+      revealElements(awardsContainer, awardsArray);
+      revealElements(progressBarsContainer, progressBarsTitles);
+
+      if (progressBarsContainer.getBoundingClientRect().top <= window.innerHeight * 0.7 || window.innerHeight + window.pageYOffset >= document.body.offsetHeight){
+        revealProgressBars(progressBarsArray)
+      };
+
+      revealElements(aboutLogosContainer, aboutLogos);
+      revealElements(testimonialsContainer, testimonials);
+    });
   break;
 
   //Elementos del work

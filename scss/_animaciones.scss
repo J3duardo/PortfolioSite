@@ -5,15 +5,30 @@
   .container .footer__icons,
   .specialize__specials div,
   .stats__item,
-  .process__items > div
+  .process__items > div,
+  .about-me__info > div,
+  .about-me__award,
+  .progress-bars h4,
+  .about-logos__logo,
+  .testimonials__testimonial
   {
     transform: translateY(70%);
     opacity: 0;
     transition: all 750ms;
   }
 
+  .progress-bars__bar-container {
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: all 750ms;
+  }
+
   #reveal {
     transform: translateY(0);
     opacity: 1;
+  }
+
+  #revealProgressBars {
+    transform: scaleX(1);
   }
 }
