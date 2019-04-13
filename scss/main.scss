@@ -585,5 +585,9 @@ img {
 }
 
 
-/* Importar media queries para resposive design */
-@import "media"
+//Importar media queries para resposive design
+@import "media";
+
+// Mantener los elementos ocultos hasta revelarlos con scroll
+@import "animaciones";
+

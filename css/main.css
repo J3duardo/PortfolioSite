@@ -702,7 +702,6 @@ img {
   color: #fff;
 }
 
-/* Importar media queries para resposive design */
 @media (max-width: 800px) {
   html {
     font-size: 15px;
@@ -955,6 +954,27 @@ img {
   }
   .contact__icons-icon:not(:last-child) {
     margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .container .title,
+  .container .lead,
+  .container .footer__copyright,
+  .container .footer__icons,
+  .specialize__specials div,
+  .stats__item,
+  .process__items > div {
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+    opacity: 0;
+    -webkit-transition: all 750ms;
+    transition: all 750ms;
+  }
+  #reveal {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+@media (min-width: 500px) {
+  .container .title,
+  .container .lead,
+  .container .footer__copyright,
+  .container .footer__icons,
+  .specialize__specials div,
+  .stats__item,
+  .process__items > div
+  {
+    transform: translateY(70%);
+    opacity: 0;
+    transition: all 750ms;
+  }
+
+  #reveal {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
